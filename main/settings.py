@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*+&t6jq)6!&#@b914_$r(%tdr#s_a8(v&^-)_!46xu3kbg4s6y'
+SECRET_KEY = '(sblkxzhxqsyo6hi8bt7ikh$7orjgj931#ktl8fozi2_8qf&oc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,34 +40,6 @@ INSTALLED_APPS = [
     'rest_framework',
     # user
     'user_models.apps.UsersConfig',
-    # wallets
-    'wallet_models.apps.WalletConfig',
-    # pcr modules
-    # suppliers
-    'pcr_models.suppliers.suppliers.apps.SuppliersConfig',
-    # staffs
-    'pcr_models.staffs.staffs.apps.StaffsConfig',
-    'pcr_models.staffs.staff_groups.apps.StaffGroupsConfig',
-    'pcr_models.staffs.staff_group_payments.apps.StaffGroupPaymentsConfig',  # install it with wallet modules
-    # branches
-    'pcr_models.branches.branches.apps.BranchConfig',
-    # customers
-    'pcr_models.customers.customers.apps.CustomersConfig',
-    # products
-    'pcr_models.products.products.apps.ProductsConfig',
-    'pcr_models.products.product_stocks.apps.ProductStocksConfig',
-    'pcr_models.products.product_supplies.apps.ProductSuppliesConfig',
-    'pcr_models.products.product_builds.apps.ProductBuildsConfig',
-    # items
-    'pcr_models.items.items.apps.ItemsConfig',
-    'pcr_models.items.item_stocks.apps.ItemStocksConfig',
-    'pcr_models.items.item_suppliers.apps.ItemSuppliersConfig',
-    'pcr_models.items.item_purchases.apps.ItemPurchasesConfig',
-    'pcr_models.items.item_uses.apps.ItemUsesConfig',
-    # orders
-    'pcr_models.orders.orders.apps.OrdersConfig',
-    # revenues
-    # 'pcr_models.revenues.revenues.apps.RevenuesConfig',
     # Clean-Up
     'django_cleanup.apps.CleanupConfig',  # should go after your apps
     # Filter
