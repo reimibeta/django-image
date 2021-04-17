@@ -22,18 +22,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # user
     path('api/users/', include('user_models.urls')),
-    # Customer Api
-    path('api/customers/', include('pcr_models.customers.customers.urls')),
-    # Staff Api
-    path('api/staffs/', include('pcr_models.staffs.staffs.urls')),
-    path('api/staff-groups/', include('pcr_models.staffs.staff_groups.urls')),
-    # Product Api
-    path('api/products/', include('pcr_models.products.products.urls')),
-    path('api/product-builds/', include('pcr_models.products.product_builds.urls')),
-    path('api/product-supplies/', include('pcr_models.products.product_supplies.urls')),
-    path('api/product-stocks/', include('pcr_models.products.product_stocks.urls')),
-    # Supplier
-    path('api/suppliers/', include('pcr_models.suppliers.suppliers.urls')),
-    # Order Api
-    path('api/orders/', include('pcr_models.orders.orders.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
