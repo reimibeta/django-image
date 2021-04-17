@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     # django rest-framework
     'rest_framework',
     # user
-    'user_models.apps.UsersConfig',
+    # 'user_models.apps.UsersConfig',
+    # example
+    'example.images.apps.ImagesConfig',
     # Clean-Up
     'django_cleanup.apps.CleanupConfig',  # should go after your apps
     # Filter
@@ -138,7 +140,7 @@ except ImportError:
 # handle upload with permission
 FILE_UPLOAD_PERMISSIONS = 0o644
 # AUTH
-AUTH_USER_MODEL = 'user_models.User'
+# AUTH_USER_MODEL = 'user_models.User'
 # Django-Rest-FrameWork
 REST_FRAMEWORK = {
     # this bit makes the magic.
