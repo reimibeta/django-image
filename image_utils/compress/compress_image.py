@@ -26,7 +26,7 @@ class CompressImage:
         )
         print('not auto')
 
-    def resize(self, size, image, name=None):
+    def resize(self, image, size, name=None):
         # set image
         self.image_file = ImageFile(image)
         self.output = BytesIO()

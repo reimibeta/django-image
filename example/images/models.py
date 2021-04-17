@@ -18,13 +18,13 @@ class Image(models.Model):
             print('return true when on new file uploaded!')
         else:
             self.photo = compress_image.resize(
-                700,
                 self.photo,
+                700,
                 # "test"
             )
             self.thumbnail = compress_image.resize(
-                300,
                 self.photo,
+                300,
                 # 'test'
             )
         super(Image, self).save(*args, **kwargs)
