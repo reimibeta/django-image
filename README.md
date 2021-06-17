@@ -1,2 +1,2 @@
-# django-image-utils
- django image utils
+# django-image
+ django image
