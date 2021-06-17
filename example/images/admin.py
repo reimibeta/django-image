@@ -1,7 +1,7 @@
 from django.contrib import admin
 
+from django_image.renders.render_image import render_image
 from example.images.models import Image
-from image_utils.renders.render_image import render_image
 
 
 class ImageAdmin(admin.ModelAdmin):

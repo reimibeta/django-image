@@ -1,7 +1,8 @@
 from PIL import Image
 from io import BytesIO
-from image_utils.compress.compress_dimension import CompressDimension
-from image_utils.compress.image_file import ImageFile
+
+from django_image.compress.compress_dimension import CompressDimension
+from django_image.compress.image_file import ImageFile
 
 
 class CompressImage:

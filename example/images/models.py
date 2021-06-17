@@ -1,5 +1,6 @@
 from django.db import models
-from image_utils.compress.compress_image import compress_image
+
+from django_image.compress.compress_image import compress_image
 
 
 class Image(models.Model):
